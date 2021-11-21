@@ -65,6 +65,7 @@ public class AboutActivity extends Activity implements OnClickListener
 		
 		findViewById(R.id.btnFeedback).setOnClickListener(this);
 		findViewById(R.id.btnPlaystore).setOnClickListener(this);
+		findViewById(R.id.btnBilibili).setOnClickListener(this);
 	}
 	
 	/**
@@ -123,6 +124,17 @@ public class AboutActivity extends Activity implements OnClickListener
 					startActivity(intent);
 				}
 				catch (Exception e)
+				{
+					e.printStackTrace();
+				}
+				break;
+
+			case R.id.btnBilibili:
+				try
+				{
+					Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.bilibili.com/"));
+					startActivity(intent);
+				}catch (Exception e)
 				{
 					e.printStackTrace();
 				}
