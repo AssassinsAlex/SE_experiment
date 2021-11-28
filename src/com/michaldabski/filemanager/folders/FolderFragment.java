@@ -737,7 +737,12 @@ public class FolderFragment extends Fragment implements OnItemClickListener, OnS
 				if (isEverythingSelected()) clearFileSelection();
 				else selectFiles(files);
 				return true;
-				
+
+			case R.id.action_cancelAll:
+				clearFileSelection();
+				finishActionMode(false);
+				return true;
+
 			case R.id.action_info:
 				if (selectedFiles.isEmpty()) return true;
 				showFileInfo(selectedFiles);
