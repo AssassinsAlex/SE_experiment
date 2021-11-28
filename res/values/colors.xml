@@ -22,5 +22,5 @@
 <resources>
     <color name="accent_color">#FF8800</color>
     <color name="accent_color_light">#FFBB33</color>
-    <color name="color_window_background">#E5E5E5</color>
+    <color name="color_window_background">#F0F8FF</color>
 </resources>
